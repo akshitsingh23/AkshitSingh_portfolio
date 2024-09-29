@@ -5,15 +5,7 @@
 <div align="center">
 
 
-</div>
-
-## Show your support
-
-### Give a ⭐ if you like this website!
-
-## Developed With
-
-My personal portfolio <a href="/" target="_blank" rel='noopener' rel="noreferrer">Shrey Asthana</a> Its features some of my projects and my Resume.<br/>
+My personal portfolio <a href="/" target="_blank" rel='noopener' rel="noreferrer">Akshit Singh</a> Its features some of my projects and my Resume.<br/>
 
 This project was built using these technologies.
 
