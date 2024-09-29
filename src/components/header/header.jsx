@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import CTA from "./CoreToAction";
-import Me from "../../assets/me-prof2.jpg";
+import Me from "../../assets/me-prof2.webp";
 import HeaderSocial from './headerSocials';
 import Type from './type';
 
@@ -10,7 +10,7 @@ const header = () => {
     <header>
       <div className='container header__container' id="header">
         <h4>Hello I'm</h4>
-        <h1>Akshit Singh</h1>
+        <h1 className='font-medium '>Akshit Singh</h1>
         <div>
           <h5 className='text-light'>
             <Type />
@@ -22,7 +22,6 @@ const header = () => {
           <img src= {Me} className='me' alt='me' />
         </div>
         
-        <a href='#contact' className='scroll__down'>Scroll Down</a>
       </div>
     </header>
   )

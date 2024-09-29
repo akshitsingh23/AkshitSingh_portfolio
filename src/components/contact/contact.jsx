@@ -23,8 +23,8 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className='container contact__container'>
-        <div className='contact__options'>
-          <article className='contact__option'>
+        <div className='contact__options '>
+          <article className='contact__option flex justify-center items-center grid grid-cols-1'>
             <AiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>singhakshit2k3@gmail.com</h5>
@@ -46,11 +46,11 @@ const Contact = () => {
           </article>
         </div>
         {/*............ Contact Options End ...........*/}
-        <div className='text-black' id='form'>
-          <form ref={form} onSubmit={sendEmail}>
-            <input className='text-black font-sans' type='text' name='name' placeholder='Your Full Name' required />
-            <input type='email' name='email' placeholder='Your Email' required />
-            <textarea name='message' rows='7' placeholder='Your Message' required ></textarea>
+        <div className='text-black font-mono text-white' id='form'>
+          <form ref={form} onSubmit={sendEmail} className=''>
+            <input  className='p-2 uppercase' type='text' name='name' placeholder='Your Full Name' required />
+            <input type='email' className='p-2 lowercase' name='email' placeholder='Your Email' required />
+            <textarea name='message' className='p-2' rows='7' placeholder='Your Message' required ></textarea>
             <button type='submit' className='btn'>Send Message</button>
           </form>
         </div>

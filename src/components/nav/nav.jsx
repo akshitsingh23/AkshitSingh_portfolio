@@ -1,12 +1,12 @@
 import React from 'react';
 import './nav.css';
 import {BiHome} from 'react-icons/bi';
-import {AiOutlineUser} from 'react-icons/ai'
+import {AiOutlineUser,AiOutlineFileText} from 'react-icons/ai'
 import {GoBook} from 'react-icons/go';
-import {MdOutlineWorkOutline} from 'react-icons/md';
+import {MdOutlineWorkOutline } from 'react-icons/md';
 import {AiOutlineMessage} from 'react-icons/ai';
 import { useState } from 'react';
-
+import CV1 from "../../assets/akshit_cv.pdf";
 
 const Nav = () => {
 
@@ -33,6 +33,11 @@ const Nav = () => {
       <a href='#contact'
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}><AiOutlineMessage />
+      </a>
+      <a href={CV1} target='_blank'// Assuming you have a route for the resume page
+        // onClick={() => setActiveNav('#resume')}
+
+        className={activeNav === '#resume' ? 'active' : ''}><AiOutlineFileText />
       </a>
     </nav>
   )

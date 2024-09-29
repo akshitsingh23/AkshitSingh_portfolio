@@ -28,6 +28,9 @@
 .contact__option-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    display: flex; /* Add this line */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
 }
 
 .contact__option a {
@@ -46,17 +49,22 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    padding: 3%;
 }
 
 input, textarea {
     width: 100%;
     padding: 4.5rem;
-    padding: 10%;
-    border-radius: 0.5rem;
+    padding: 3rem;
+    border-radius: 0.6rem;
     background: var(--color-black);
     border: 2px solid var(--color-primary-variant);
     resize: none;
-    color: black;
+}
+    /* text-align: center; */
+    /* text-wrap: wrap; */
+    /* padding-left: 50%; */
+    /* color: black;
 }
 
 /* ------ MEDIA Queries (Tabs/Medium Devices) ------ */

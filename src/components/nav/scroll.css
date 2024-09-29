@@ -1,0 +1,56 @@
+.fixed {
+    position: fixed;
+  }
+  
+  .bottom-4 {
+    bottom: 1rem;
+  }
+  
+  .right-4 {
+    right: 1rem;
+  }
+  
+  .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .bg-blue-500 {
+    background-color: #31d9ff;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px #e93838d1, 0 4px 6px -2px #c80000;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: #31d9ff;
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms;
+  }
+  
+  /* New styles for the transition effect */
+  .transition-transform {
+    transition: transform 500ms ease-in-out;
+  }
+  
+  .translate-x-full {
+    transform: translateX(100%);
+  }
+  
+  .translate-x-0 {
+    transform: translateX(0);
+  }
