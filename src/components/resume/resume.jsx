@@ -9,7 +9,7 @@ const ResumePage = () => {
       <Navbar />
       <div className="flex-grow flex flex-col items-center justify-center p-4">
         <h3 className="text-2xl font-bold mb-4">My Resume</h3>
-        <iframe src={CV} width="100%" height="600px" title="Resume" className="border-0"></iframe>
+        <iframe src="https://drive.google.com/file/d/1_fTXBQC6txRj-oj6XmUCxk9jLUla8JvZ/view?usp=sharing" width="100%" height="600px" title="Resume" className="border-0"></iframe>
       </div>
       <Footer />
     </div>

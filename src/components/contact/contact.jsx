@@ -1,20 +1,46 @@
-import React from 'react'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
 import "./contact.css";
 import { AiOutlineMail } from 'react-icons/ai';
 import { RiMessengerLine } from 'react-icons/ri';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
   const form = useRef();
-
-  const sendEmail = (e) => {
+  const [status, setStatus] = useState('');
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_1ml2bmi', 'template_ni2e0qm', form.current, 'Udv0L8VcHA4-qFbVn')
-    e.target.reset();
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    try {
+      const response = await fetch('https://your-vercel-deployment-url/api/sendEmail', { // Update the URL to match your Vercel deployment
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully');
+        alert('Message sent successfully');
+        e.target.reset();
+      } else {
+        setStatus('Failed to send message');
+        alert('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setStatus('Error occurred. Please try again later.');
+      alert('Error occurred. Please try again later.');
+    }
   };
 
   return (
@@ -46,17 +72,18 @@ const Contact = () => {
           </article>
         </div>
         {/*............ Contact Options End ...........*/}
-        <div className='text-black font-mono text-white' id='form'>
+        <div className='font-mono text-white' id='form'>
           <form ref={form} onSubmit={sendEmail} className=''>
-            <input  className='p-2 uppercase' type='text' name='name' placeholder='Your Full Name' required />
+            <input className='p-2 uppercase' type='text' name='name' placeholder='Your Full Name' required />
             <input type='email' className='p-2 lowercase' name='email' placeholder='Your Email' required />
             <textarea name='message' className='p-2' rows='7' placeholder='Your Message' required ></textarea>
             <button type='submit' className='btn'>Send Message</button>
           </form>
+          {/* {status && <p>{status}</p>} */}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
