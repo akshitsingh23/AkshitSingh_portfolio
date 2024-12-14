@@ -73,12 +73,16 @@ const Contact = () => {
         </div>
         {/*............ Contact Options End ...........*/}
         <div className='font-mono text-white' id='form'>
-          <form ref={form} onSubmit={sendEmail} className=''>
-            <input className='p-2 uppercase' type='text' name='name' placeholder='Your Full Name' required />
-            <input type='email' className='p-2 lowercase' name='email' placeholder='Your Email' required />
-            <textarea name='message' className='p-2' rows='7' placeholder='Your Message' required ></textarea>
-            <button type='submit' className='btn'>Send Message</button>
-          </form>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTlLNwtaSSjxRzkUr_OauhkjGOf38PQQ2ngtoxgON2pEBjJg/viewform?embedded=true"
+            // width="740"
+            className='lg:w-[700px] md:w-[600px] w-[400px] lg:h-[900px] h-[1000px]'
+            // height="900"
+            frameborder="0"
+            marginheight="0"
+            scrolling='no'
+            marginwidth="0">
+            Loading…
+          </iframe>
           {/* {status && <p>{status}</p>} */}
         </div>
       </div>

@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     image: chat,
     title: 'ChatMania',
-    github: 'https://github.com/iam-shreyasthana/exceptional-books',
+    github: 'https://github.com/akshitsingh23/ChatMania_',
     demo: '/'
   }
 ];
