@@ -9,17 +9,17 @@ import chat from "../../assets/Chatmania.png";
 const projects = [
   {
     id: 1,
-    image: dtw,
-    title: 'Multiple Stock Analysis using Dynamic Time Warping',
-    github: 'https://github.com/akshitsingh23/Stock_Analysis_Dynamic_Time_Warping.git',
-    demo: '/'
-  },
-  {
-    id: 2,
     image: tbif,
     title: 'IIT Ropar-TBIF website',
     github: 'https://github.com/akshitsingh23/Tbif-IIT-Ropar.git',
     demo: 'https://www.iitrpr.ac.in/tbif/'
+  },
+  {
+    id: 2,
+    image: dtw,
+    title: 'Multiple Stock Analysis using Dynamic Time Warping',
+    github: 'https://github.com/akshitsingh23/Stock_Analysis_Dynamic_Time_Warping.git',
+    demo: '/'
   },
   {
     id: 3,
