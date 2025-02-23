@@ -6,7 +6,7 @@ import {GoBook} from 'react-icons/go';
 import {MdOutlineWorkOutline } from 'react-icons/md';
 import {AiOutlineMessage} from 'react-icons/ai';
 import { useState } from 'react';
-import CV1 from "../../assets/akshit_cv.pdf";
+// import CV1 from "../../assets/akshit_cv.pdf";
 
 const Nav = () => {
 
@@ -34,7 +34,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}><AiOutlineMessage />
       </a>
-      <a href={CV1} target='_blank'// Assuming you have a route for the resume page
+      <a href="https://drive.google.com/file/d/1_fTXBQC6txRj-oj6XmUCxk9jLUla8JvZ/view?usp=sharing" target='_blank'// Assuming you have a route for the resume page
         // onClick={() => setActiveNav('#resume')}
 
         className={activeNav === '#resume' ? 'active' : ''}><AiOutlineFileText />
