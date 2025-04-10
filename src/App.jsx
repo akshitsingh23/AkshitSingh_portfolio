@@ -9,6 +9,9 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import ScrollToTop from './components/nav/scroll';
 
+const BASE = process.env.REACT_APP_PUBLIC_URL || "";
+
+
 const App = () => {
   return (
     <>
