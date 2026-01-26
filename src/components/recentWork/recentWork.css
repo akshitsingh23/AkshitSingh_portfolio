@@ -9,12 +9,13 @@
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: box-shadow 0.3s ease;
 }
 
 .recentWork__item:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    box-shadow: 0 20px 40px rgba(211, 211, 211, 0.523);
+    /* background: transparent; */
 }
 
 .recentWork__item-image {
