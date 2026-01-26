@@ -27,7 +27,7 @@ nav a:hover {
     background: #31d9ff;
     transition: background 0.1s ease, transform 0.2s ease;
     transform: scale(1);
-    border-color: orange;
+    /* border-color: orange; */
 }
 
 
