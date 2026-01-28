@@ -1,25 +1,5 @@
 {
-    "rewrites": [
-        {
-            "source": "/akshit/:path*",
-            "destination": "/:path*"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/akshit/.*",
-            "status": 404,
-            "continue": true
-        }
-    ],
-    "errorOverrides": {
-        "502": {
-            "statusCode": 502,
-            "path": "/502.html"
-        },
-        "404": {
-            "statusCode": 404,
-            "path": "/404.html"
-        }
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
